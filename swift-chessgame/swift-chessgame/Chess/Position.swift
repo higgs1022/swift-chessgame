@@ -7,29 +7,28 @@
 
 import Foundation
 
-enum PositionError: Error {
-    case outOfRange
-}
-
 final class Position {
     private var x: Int
     private var y: Int
     
-    private func checkBound(_ point: Int) throws {
+    private func checkBound(_ point: Int) -> Bool {
         guard point >= 0 else {
-            throw PositionError.outOfRange
+            return false
         }
         
         guard point < 8 else {
-            throw PositionError.outOfRange
+            return false
         }
+        
+        return true
     }
     
-    init(x: Int, y: Int) throws {
+    init?(x: Int, y: Int) {
         self.x = x
         self.y = y
         
-        try checkBound(x)
-        try checkBound(y)
+        guard checkBound(x), checkBound(y) else {
+            return nil
+        }
     }
 }

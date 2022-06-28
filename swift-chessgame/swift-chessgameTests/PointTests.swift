@@ -14,10 +14,11 @@ class PointTests: XCTestCase {
         let y = 0
         
         //when
+        var position: Position?
+        position = Position(x: x, y: y)
+        
         //then
-        XCTAssertThrowsError(try Position(x: x, y: y)) { error in
-            XCTAssertEqual(error as? PositionError, .outOfRange)
-        }
+        XCTAssertNil(position)
     }
     
     func test_given8이상의좌표_when생성_then생성실패() throws {
@@ -26,22 +27,21 @@ class PointTests: XCTestCase {
         let y = 0
         
         //when
+        var position: Position?
+        position = Position(x: x, y: y)
+        
         //then
-        XCTAssertThrowsError(try Position(x: x, y: y)) { error in
-            XCTAssertEqual(error as? PositionError, .outOfRange)
-        }
+        XCTAssertNil(position)
     }
     
-    func test_given정상범위좌표_when생성_then생성실패() throws {
+    func test_given정상범위좌표_when생성_then생성성공() throws {
         //given
         let x = 1
         let y = 1
         
         //when
         var position: Position?
-        do {
-            position = try Position(x: x, y: y)
-        } catch {}
+        position = Position(x: x, y: y)
         
         //then
         XCTAssertNotNil(position)
