@@ -7,7 +7,13 @@
 
 import Foundation
 
+enum PieceColor {
+    case white
+    case black
+}
+
 protocol Piece: Printable, Movable {
-    var shape: String { get set }
+    var color: PieceColor { get set }
+    var shape: String { get }
     var position: Position { get set }
 }

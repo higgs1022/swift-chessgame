@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Printable {
-    var shape: String { get set }
+    var shape: String { get }
 }
