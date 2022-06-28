@@ -33,7 +33,3 @@ final class Position {
         try checkBound(y)
     }
 }
-
-protocol ChessPiece {
-    var position: Position { get set }
-}

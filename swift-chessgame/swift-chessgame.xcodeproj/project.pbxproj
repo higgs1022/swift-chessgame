@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA53AAA8286AC4BF00A633FC /* Movable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAA7286AC4BF00A633FC /* Movable.swift */; };
+		AA53AAAA286AC51300A633FC /* Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAA9286AC51300A633FC /* Printable.swift */; };
+		AA53AAAC286AC5E600A633FC /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAAB286AC5E600A633FC /* Piece.swift */; };
 		AADE8C1B2860520C002879BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1A2860520C002879BA /* AppDelegate.swift */; };
 		AADE8C1D2860520C002879BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1C2860520C002879BA /* SceneDelegate.swift */; };
 		AADE8C1F2860520C002879BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1E2860520C002879BA /* ViewController.swift */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA53AAA7286AC4BF00A633FC /* Movable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movable.swift; sourceTree = "<group>"; };
+		AA53AAA9286AC51300A633FC /* Printable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printable.swift; sourceTree = "<group>"; };
+		AA53AAAB286AC5E600A633FC /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
 		AADE8C172860520C002879BA /* swift-chessgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chessgame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADE8C1A2860520C002879BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADE8C1C2860520C002879BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA53AAA6286AC4AE00A633FC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AA53AAAB286AC5E600A633FC /* Piece.swift */,
+				AA53AAA7286AC4BF00A633FC /* Movable.swift */,
+				AA53AAA9286AC51300A633FC /* Printable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		AADE8C0E2860520C002879BA = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +131,7 @@
 		AADE8C322860558F002879BA /* Piece */ = {
 			isa = PBXGroup;
 			children = (
+				AA53AAA6286AC4AE00A633FC /* Protocol */,
 				AADE8C33286055C1002879BA /* Empty.swift */,
 			);
 			path = Piece;
@@ -232,11 +249,14 @@
 			files = (
 				AADE8C38286057D8002879BA /* Position.swift in Sources */,
 				AADE8C1F2860520C002879BA /* ViewController.swift in Sources */,
+				AA53AAAC286AC5E600A633FC /* Piece.swift in Sources */,
 				AADE8C1B2860520C002879BA /* AppDelegate.swift in Sources */,
 				AADE8C34286055C1002879BA /* Empty.swift in Sources */,
 				AADE8C312860530B002879BA /* Board.swift in Sources */,
 				AADE8C3628605790002879BA /* GameMap.swift in Sources */,
+				AA53AAA8286AC4BF00A633FC /* Movable.swift in Sources */,
 				AADE8C1D2860520C002879BA /* SceneDelegate.swift in Sources */,
+				AA53AAAA286AC51300A633FC /* Printable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
