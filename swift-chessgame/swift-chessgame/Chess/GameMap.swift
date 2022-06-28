@@ -8,10 +8,30 @@
 import Foundation
 
 final class GameMap {
-    private lazy var gameMap: [[Printable]] = createEmptyMap()
+    lazy var gameMap: [[Printable]] = resetMap()
     
-    private func createEmptyMap() -> [[Printable]] {
-        return [[Empty]] (repeating: Array(repeating: Empty(),count: 8 ),
-                          count: 8)
+    private func resetMap() -> [[Printable]] {
+        let stringMap = [
+            ["♜", "♞", "♝", ".", "♛", "♝", "♞", "♜"],
+            ["♟", "♟", "♟", "♟", "♟", "♟", "♟", "♟"],
+            [".", ".", ".", ".", ".", ".", ".", "."],
+            [".", ".", ".", ".", ".", ".", ".", "."],
+            [".", ".", ".", ".", ".", ".", ".", "."],
+            [".", ".", ".", ".", ".", ".", ".", "."],
+            ["♙", "♙", "♙", "♙", "♙", "♙", "♙", "♙"],
+            ["♖", "♘", "♗", ".", "♕", "♗", "♘", "♖"]
+        ]
+        
+        let initMap = stringMap
+            .enumerated()
+            .map { y, row -> [Printable] in
+                return row.enumerated()
+                    .map { x, element -> Printable? in
+                        return element.toChessPiece(x: x, y: y)
+                    }
+                    .compactMap({ $0 })
+            }
+        
+        return initMap
     }
 }

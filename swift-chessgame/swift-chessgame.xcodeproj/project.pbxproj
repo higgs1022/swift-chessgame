@@ -15,6 +15,7 @@
 		AA53AAB2286ACC7B00A633FC /* Biship.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAB1286ACC7B00A633FC /* Biship.swift */; };
 		AA53AAB4286ACC9100A633FC /* Rook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAB3286ACC9100A633FC /* Rook.swift */; };
 		AA53AAB6286ACCB200A633FC /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAB5286ACCB200A633FC /* Queen.swift */; };
+		AA53AAC7286AEE5300A633FC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAC6286AEE5300A633FC /* Util.swift */; };
 		AADE8C1B2860520C002879BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1A2860520C002879BA /* AppDelegate.swift */; };
 		AADE8C1D2860520C002879BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1C2860520C002879BA /* SceneDelegate.swift */; };
 		AADE8C1F2860520C002879BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1E2860520C002879BA /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		AA53AAB1286ACC7B00A633FC /* Biship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biship.swift; sourceTree = "<group>"; };
 		AA53AAB3286ACC9100A633FC /* Rook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rook.swift; sourceTree = "<group>"; };
 		AA53AAB5286ACCB200A633FC /* Queen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queen.swift; sourceTree = "<group>"; };
+		AA53AAC6286AEE5300A633FC /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		AADE8C172860520C002879BA /* swift-chessgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chessgame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADE8C1A2860520C002879BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADE8C1C2860520C002879BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				AADE8C302860530B002879BA /* Board.swift */,
 				AADE8C3528605790002879BA /* GameMap.swift */,
 				AADE8C37286057D8002879BA /* Position.swift */,
+				AA53AAC6286AEE5300A633FC /* Util.swift */,
 			);
 			path = Chess;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				AADE8C38286057D8002879BA /* Position.swift in Sources */,
 				AADE8C1F2860520C002879BA /* ViewController.swift in Sources */,
 				AA53AAAC286AC5E600A633FC /* Piece.swift in Sources */,
+				AA53AAC7286AEE5300A633FC /* Util.swift in Sources */,
 				AA53AAB2286ACC7B00A633FC /* Biship.swift in Sources */,
 				AADE8C1B2860520C002879BA /* AppDelegate.swift in Sources */,
 				AA53AAB0286ACC3700A633FC /* Knight.swift in Sources */,

@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-private class Board {
-    private lazy var gameMap = GameMap()
+final class Board {
+    lazy var gameMap = GameMap()
 }
