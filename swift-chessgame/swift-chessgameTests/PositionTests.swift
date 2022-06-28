@@ -7,7 +7,7 @@
 
 import XCTest
 
-class PointTests: XCTestCase {
+class PositionTests: XCTestCase {
     func test_given음수좌표_when생성_then생성실패() throws {
         //given
         let x = -1
