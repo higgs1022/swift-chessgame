@@ -8,9 +8,9 @@
 import Foundation
 
 final class GameState {
-    private var currentColor: PieceColor = .white
-    private var turn: Int = 0
-    private var selecedPiece: Piece?
+    private(set) var currentColor: PieceColor = .white
+    private(set) var turn: Int = 0
+    private(set) var selecedPiece: Piece?
     var isSelecting: Bool {
         return selecedPiece != nil
     }
