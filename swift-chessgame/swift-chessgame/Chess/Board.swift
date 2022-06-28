@@ -18,6 +18,10 @@ final class Board {
         return gameState.select(selectedPiece)
     }
     
+    func deselect() {
+        //TODO
+    }
+    
     func move(from: Position, to: Position) {
         guard let selectedPiece = from as? Piece,
               selectedPiece.color == gameState.currentColor else { return }
