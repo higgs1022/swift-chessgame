@@ -27,7 +27,7 @@ final class GameMap {
             .map { y, row -> [Printable] in
                 return row.enumerated()
                     .map { x, element -> Printable? in
-                        return element.toChessPiece(x: x, y: y)
+                        return element.toChessPiece(x: x + 1, y: y + 1)
                     }
                     .compactMap({ $0 })
             }
