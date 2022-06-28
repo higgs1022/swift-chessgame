@@ -35,7 +35,7 @@
 		AA53AADB286B54E100A633FC /* UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAD9286B54E100A633FC /* UtilTests.swift */; };
 		AADE8C1B2860520C002879BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1A2860520C002879BA /* AppDelegate.swift */; };
 		AADE8C1D2860520C002879BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1C2860520C002879BA /* SceneDelegate.swift */; };
-		AADE8C1F2860520C002879BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1E2860520C002879BA /* ViewController.swift */; };
+		AADE8C1F2860520C002879BA /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1E2860520C002879BA /* BoardViewController.swift */; };
 		AADE8C222860520C002879BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADE8C202860520C002879BA /* Main.storyboard */; };
 		AADE8C242860520D002879BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADE8C232860520D002879BA /* Assets.xcassets */; };
 		AADE8C272860520D002879BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AADE8C252860520D002879BA /* LaunchScreen.storyboard */; };
@@ -75,7 +75,7 @@
 		AADE8C172860520C002879BA /* swift-chessgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chessgame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADE8C1A2860520C002879BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADE8C1C2860520C002879BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AADE8C1E2860520C002879BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AADE8C1E2860520C002879BA /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 		AADE8C212860520C002879BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AADE8C232860520D002879BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AADE8C262860520D002879BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 				AADE8C2F286052FD002879BA /* Chess */,
 				AADE8C1A2860520C002879BA /* AppDelegate.swift */,
 				AADE8C1C2860520C002879BA /* SceneDelegate.swift */,
-				AADE8C1E2860520C002879BA /* ViewController.swift */,
+				AADE8C1E2860520C002879BA /* BoardViewController.swift */,
 				AADE8C202860520C002879BA /* Main.storyboard */,
 				AADE8C232860520D002879BA /* Assets.xcassets */,
 				AADE8C252860520D002879BA /* LaunchScreen.storyboard */,
@@ -291,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AADE8C38286057D8002879BA /* Position.swift in Sources */,
-				AADE8C1F2860520C002879BA /* ViewController.swift in Sources */,
+				AADE8C1F2860520C002879BA /* BoardViewController.swift in Sources */,
 				AA53AAAC286AC5E600A633FC /* Piece.swift in Sources */,
 				AA53AAC7286AEE5300A633FC /* Util.swift in Sources */,
 				AA53AAB2286ACC7B00A633FC /* Biship.swift in Sources */,

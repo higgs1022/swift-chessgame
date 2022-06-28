@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BoardViewController: UIViewController {
     @IBOutlet weak var verticalStack: UIStackView!
     @IBOutlet weak var horizontalStack0: UIStackView!
     @IBOutlet weak var horizontalStack1: UIStackView!
