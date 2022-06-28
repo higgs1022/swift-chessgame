@@ -12,6 +12,12 @@ final class Board {
     var gameMap = GameMap()
     var gameState = GameState()
     
+    func select(position: Position) -> Bool {
+        guard let selectedPiece = gameMap.gameMap[position.y-1][position.x-1] as? Piece else { return false }
+        guard gameState.currentColor == selectedPiece.color else { return false }
+        return gameState.select(selectedPiece)
+    }
+    
     func move(from: Position, to: Position) {
         guard let selectedPiece = from as? Piece,
               selectedPiece.color == gameState.currentColor else { return }

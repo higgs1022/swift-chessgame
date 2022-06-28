@@ -18,12 +18,35 @@ class BoardViewController: UIViewController {
     @IBOutlet weak var horizontalStack6: UIStackView!
     @IBOutlet weak var horizontalStack7: UIStackView!
     
-    
     let board = Board()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        refreshMap()
+    }
+    
+    func calculateTouchAction(x: Int, y: Int, sender: UIButton) {
+        switch board.gameState.state {
+        case .idle:
+            sender.backgroundColor = .brown
+            //board.select(position: )
+        case .selected:
+            //board.move(from: , to: )
+            // or
+            //board.deselect()
+            break
+        }
+    }
+    
+    func refreshMap() {
+        for y in 0...7 {
+            for x in 0...7 {
+                let piece = board.gameMap.gameMap[y][x].shape
+                guard let row = verticalStack.arrangedSubviews[y] as? UIStackView else { return }
+                guard let button = row.arrangedSubviews[x] as? UIButton else { return }
+                button.setTitle(piece, for: .normal)
+            }
+        }
     }
 
     @IBAction func pieceTouch(_ sender: UIButton) {
@@ -120,7 +143,7 @@ class BoardViewController: UIViewController {
         }
         
         print("\(x) \(y)")
+        calculateTouchAction(x: x, y: y, sender: sender)
     }
-    
 }
 

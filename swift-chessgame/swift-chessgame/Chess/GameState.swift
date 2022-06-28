@@ -7,12 +7,21 @@
 
 import Foundation
 
+enum State {
+    case idle
+    case selected
+}
+
 final class GameState {
     private(set) var currentColor: PieceColor = .white
     private(set) var turn: Int = 0
     private(set) var selecedPiece: Piece?
-    var isSelecting: Bool {
-        return selecedPiece != nil
+    var state: State {
+        if selecedPiece == nil {
+            return .idle
+        } else {
+            return .selected
+        }
     }
     
     init() {
