@@ -9,4 +9,5 @@ import Foundation
 
 protocol Movable {
     var position: Position { get set }
+    func expectedMovePoints() -> [Position]
 }

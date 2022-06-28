@@ -7,6 +7,6 @@
 
 import Foundation
 
-class Empty: Printable {
+final class Empty: Printable {
     var shape: String = "."
 }

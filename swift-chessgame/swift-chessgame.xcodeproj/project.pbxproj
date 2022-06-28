@@ -30,6 +30,8 @@
 		AA53AAD3286AF28D00A633FC /* Movable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAA7286AC4BF00A633FC /* Movable.swift */; };
 		AA53AAD4286AF28D00A633FC /* Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAA9286AC51300A633FC /* Printable.swift */; };
 		AA53AAD5286AF29000A633FC /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAC6286AEE5300A633FC /* Util.swift */; };
+		AA53AAD7286AF7ED00A633FC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAD6286AF7ED00A633FC /* GameState.swift */; };
+		AA53AAD8286AF7ED00A633FC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53AAD6286AF7ED00A633FC /* GameState.swift */; };
 		AADE8C1B2860520C002879BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1A2860520C002879BA /* AppDelegate.swift */; };
 		AADE8C1D2860520C002879BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1C2860520C002879BA /* SceneDelegate.swift */; };
 		AADE8C1F2860520C002879BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE8C1E2860520C002879BA /* ViewController.swift */; };
@@ -67,6 +69,7 @@
 		AA53AAB7286ACD4600A633FC /* PiecesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiecesTests.swift; sourceTree = "<group>"; };
 		AA53AAC6286AEE5300A633FC /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		AA53AAC8286AF21000A633FC /* gameMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameMapTests.swift; sourceTree = "<group>"; };
+		AA53AAD6286AF7ED00A633FC /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		AADE8C172860520C002879BA /* swift-chessgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chessgame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADE8C1A2860520C002879BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADE8C1C2860520C002879BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 			children = (
 				AADE8C322860558F002879BA /* Piece */,
 				AADE8C302860530B002879BA /* Board.swift */,
+				AA53AAD6286AF7ED00A633FC /* GameState.swift */,
 				AADE8C3528605790002879BA /* GameMap.swift */,
 				AADE8C37286057D8002879BA /* Position.swift */,
 				AA53AAC6286AEE5300A633FC /* Util.swift */,
@@ -291,6 +295,7 @@
 				AADE8C1B2860520C002879BA /* AppDelegate.swift in Sources */,
 				AA53AAB0286ACC3700A633FC /* Knight.swift in Sources */,
 				AA53AAB6286ACCB200A633FC /* Queen.swift in Sources */,
+				AA53AAD7286AF7ED00A633FC /* GameState.swift in Sources */,
 				AADE8C34286055C1002879BA /* Empty.swift in Sources */,
 				AADE8C312860530B002879BA /* Board.swift in Sources */,
 				AA53AAB4286ACC9100A633FC /* Rook.swift in Sources */,
@@ -321,6 +326,7 @@
 				AA53AAD4286AF28D00A633FC /* Printable.swift in Sources */,
 				AA53AACF286AF28A00A633FC /* Pawn.swift in Sources */,
 				AA53AACC286AF28A00A633FC /* Biship.swift in Sources */,
+				AA53AAD8286AF7ED00A633FC /* GameState.swift in Sources */,
 				AA53AAD1286AF28A00A633FC /* Rook.swift in Sources */,
 				AADE8C8528605B15002879BA /* Position.swift in Sources */,
 			);

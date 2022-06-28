@@ -8,15 +8,18 @@
 import Foundation
 
 final class Position {
-    private var x: Int
-    private var y: Int
+    private let MIN = 1
+    private let MAX = 8
+    
+    private(set) var x: Int
+    private(set) var y: Int
     
     private func checkBound(_ point: Int) -> Bool {
-        guard point >= 0 else {
+        guard point >= MIN else {
             return false
         }
         
-        guard point < 8 else {
+        guard point <= MAX else {
             return false
         }
         
