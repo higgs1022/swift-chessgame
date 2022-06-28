@@ -1,5 +1,5 @@
 //
-//  Pawn.swift
+//  Knight.swift
 //  swift-chessgame
 //
 //  Created by main on 2022/06/28.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-class Pawn: Piece {
+class Knight: Piece {
     var color: PieceColor
     
     var shape: String {
-        color == .white ? "♙" : "♟"
+        color == .white ? "♘" : "♞"
     }
     
     var position: Position
