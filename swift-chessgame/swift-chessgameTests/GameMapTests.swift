@@ -7,7 +7,7 @@
 
 import XCTest
 
-class gameMapTests: XCTestCase {
+class GameMapTests: XCTestCase {
     var gameMap: GameMap?
     
     override func setUpWithError() throws {
