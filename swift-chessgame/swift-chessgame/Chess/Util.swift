@@ -37,4 +37,36 @@ extension String {
             return nil
         }
     }
+    
+    var rankToInt: Int? {
+        guard let num = Int(self), Position.Range.contains(num) else {
+            return nil
+        }
+        
+        return num
+    }
+    
+    //file: A~H
+    var fileToInt: Int? {
+        guard let fileAscValue = self[self.startIndex].asciiValue else {
+            return nil
+        }
+        
+        let num = Int(fileAscValue - ("A" as Character).asciiValue!) + 1
+        
+        guard Position.Range.contains(num) else {
+            return nil
+        }
+        
+        return num
+    }
+    
+    var chessPosition: Position? {
+        guard self.count == 2 else { return nil }
+        guard let x = String(self[self.startIndex]).fileToInt,
+              let y = String(self[self.index(self.startIndex, offsetBy: 1)]).rankToInt else {
+            return nil
+        }
+        return Position(x: x, y: y)
+    }
 }

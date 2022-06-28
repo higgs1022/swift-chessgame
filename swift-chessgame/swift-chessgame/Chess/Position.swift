@@ -7,19 +7,20 @@
 
 import Foundation
 
-final class Position {
-    private let MIN = 1
-    private let MAX = 8
+final class Position: Equatable {
+    static let MIN = 1
+    static let MAX = 8
+    static let Range = MIN...MAX
     
     private(set) var x: Int
     private(set) var y: Int
     
     private func checkBound(_ point: Int) -> Bool {
-        guard point >= MIN else {
+        guard point >= Position.MIN else {
             return false
         }
         
-        guard point <= MAX else {
+        guard point <= Position.MAX else {
             return false
         }
         
@@ -33,5 +34,9 @@ final class Position {
         guard checkBound(x), checkBound(y) else {
             return nil
         }
+    }
+    
+    static func == (lhs: Position, rhs: Position) -> Bool {
+        return (lhs.x == rhs.x) && (lhs.y == rhs.y)
     }
 }
